@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+	<html lang="en">
+		{%load static%}
+
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Iniciar sesion | usuario</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="icon" href="{% static 'img/logo.png'%}">
+		
+		<style>
+		
+			body {
+				background: #ece6d9;
+				background: linear-gradient(to right, #ece6d9, #E3DAC9);
+			}
+			.bg {
+				background-image: url(src/img/bg.webp);
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+		</style>
+		
+	</head>
+	<body>
+	
+		<div class="container w-75 bg-primary mt-5 shadow rounded">
+			<div class="row align-items-stretch">
+				<div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+					<!-- COLUMNA DE IMAGEN -->
+				</div>
+				<div class="col bg-white p-5 rounded-end">
+				
+					<h2 class="fw-bold text-center mt-4 mb-3">Inicio de sesion</h2>
+					<div class="col">
+						<!--
+							<button class="btn btn-outline-danger w-100 my-3">
+							<div class="row align-items-center">	
+								<div class="col-12 col-md-12 text-center">
+									Solicitar turno
+								</div>
+							</div>
+						</button>
+
+						-->
+						
+					</div>
+						<small class="form-text text-muted mb-3">
+							ingrese sus credenciales
+						</small>
+					
+					<div class="form-group">
+						<div class="row">
+							<form>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  <div id="emailHelp" class="form-text">ingrese credenciales previamente registradas</div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">contraseña</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                               
+                                <button type="submit" class="btn btn-primary">ingresar</button>
+                              </form>
+						</div>
+                        
+					</div>
+                    <a href="{%url 'inicio'%}" class="btn btn-warning">regresar</a>
+					
+					
+				</div>
+			</div>
+		</div>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	</body>
+	</html> 
