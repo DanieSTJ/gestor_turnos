@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-x4g068a7*p+(97y0esbsf+3erv$x8s%@s#r4t$$9!#2t*ie1dk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['gestorturnos.azurewebsites.net']
+ALLOWED_HOSTS = ['prueba61.azurewebsites.net']
 
 
 # Application definition
@@ -118,9 +118,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'gestor_turnos/static/'
+STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
